@@ -359,4 +359,4 @@ client.on('message', message => {
 
 
  
- client.login("ODY0MzI1NDU4MjE5NDk5NTMw.YOzzzw.65XFo7K614cWkiuvdaQ8EOqBRiI");
+ client.login("");
