@@ -1,0 +1,24 @@
+      if (command === "bye2") {
+      if (message.member.hasPermission("ADMINISTRATOR")) {
+       let args = message.content.split(" ").slice(1).join(" ");
+        message.delete();
+    let split = args.split("-");
+    let url = args[2];
+        message.channel.sendMessage("@everyone", {
+          embed: {
+            color: Math.random,
+            author: {
+              name: "Offline",
+            },
+            title: "Eso es todo por ahora, no podre darle soporte al bot",
+            description: split[0],
+            url: split[1],
+            timestamp: new Date(),
+            footer: {
+              icon_url: message.author.avatarURL,
+              text: "BlackShadow%&Lazarus#6694"
+            }
+          }
+      });
+    }
+  }
